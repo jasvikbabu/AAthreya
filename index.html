@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aathreya Agro & Dairy Farm - dairy farm at Anandapuram, Visakhapatnam, Andhra Pradesh.">
+  <meta name="description"
+    content="Aathreya Agro & Dairy Farm - dairy farm at Anandapuram, Visakhapatnam, Andhra Pradesh.">
   <title>Aathreya Agro & Dairy Farm</title>
 
   <!-- Font Awesome for social icons. Remove this line if you prefer fully offline hosting. -->
@@ -25,27 +27,48 @@
       --radius: 22px;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background: var(--cream);
       line-height: 1.65;
     }
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-    .container { width: min(1180px, 92%); margin: auto; }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
 
     /* Header */
     header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(248,245,233,.96);
+      background: rgba(248, 245, 233, .96);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(31,107,58,.12);
+      border-bottom: 1px solid rgba(31, 107, 58, .12);
     }
+
     .nav {
       min-height: 82px;
       display: flex;
@@ -53,17 +76,29 @@
       justify-content: space-between;
       gap: 25px;
     }
-    .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
     .brand img {
-      width: 62px; height: 62px; object-fit: cover; border-radius: 50%;
+      width: 62px;
+      height: 62px;
+      object-fit: cover;
+      border-radius: 50%;
       border: 3px solid var(--forest);
     }
+
     .brand-text strong {
       display: block;
       color: var(--forest-dark);
       font-size: 1.02rem;
       letter-spacing: .4px;
     }
+
     .brand-text span {
       color: var(--brown);
       font-size: .76rem;
@@ -71,10 +106,31 @@
       letter-spacing: 1.5px;
       text-transform: uppercase;
     }
-    nav ul { list-style: none; display: flex; align-items: center; gap: 25px; }
-    nav a { color: var(--text); font-weight: 700; font-size: .92rem; }
-    nav a:hover { color: var(--forest); }
-    .menu-btn { display: none; border: 0; background: none; font-size: 1.5rem; color: var(--forest-dark); }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: var(--text);
+      font-weight: 700;
+      font-size: .92rem;
+    }
+
+    nav a:hover {
+      color: var(--forest);
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: none;
+      font-size: 1.5rem;
+      color: var(--forest-dark);
+    }
 
     /* Hero */
     .hero {
@@ -84,62 +140,149 @@
       position: relative;
       overflow: hidden;
       background:
-        linear-gradient(90deg, rgba(18,76,42,.92) 0%, rgba(18,76,42,.72) 48%, rgba(18,76,42,.28) 100%),
+        linear-gradient(90deg, rgba(18, 76, 42, .92) 0%, rgba(18, 76, 42, .72) 48%, rgba(18, 76, 42, .28) 100%),
         url("https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1800&q=85") center/cover;
     }
-    .hero-content { color: white; padding: 80px 0; max-width: 720px; }
+
+    .hero-content {
+      color: white;
+      padding: 80px 0;
+      max-width: 720px;
+    }
+
     .eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 8px;
       padding: 8px 14px;
       border-radius: 999px;
-      background: rgba(255,255,255,.15);
-      border: 1px solid rgba(255,255,255,.3);
+      background: rgba(255, 255, 255, .15);
+      border: 1px solid rgba(255, 255, 255, .3);
       font-size: .82rem;
       font-weight: 800;
       letter-spacing: 1.5px;
       text-transform: uppercase;
       margin-bottom: 18px;
     }
+
     h1 {
       font-family: Georgia, "Times New Roman", serif;
       font-size: clamp(2.6rem, 7vw, 5.2rem);
       line-height: 1.02;
       margin-bottom: 22px;
     }
-    .hero h1 span { color: #f0dfae; }
-    .hero p { font-size: 1.08rem; max-width: 620px; color: rgba(255,255,255,.91); }
-    .actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 30px; }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
-      padding: 13px 21px; border-radius: 999px; font-weight: 800;
-      transition: .2s ease; border: 2px solid transparent;
+
+    .hero h1 span {
+      color: #f0dfae;
     }
-    .btn-primary { background: #f0dfae; color: var(--brown); }
-    .btn-primary:hover { transform: translateY(-2px); }
-    .btn-outline { border-color: rgba(255,255,255,.75); color: white; }
-    .btn-outline:hover { background: white; color: var(--forest-dark); }
+
+    .hero p {
+      font-size: 1.08rem;
+      max-width: 620px;
+      color: rgba(255, 255, 255, .91);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 21px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: .2s ease;
+      border: 2px solid transparent;
+    }
+
+    .btn-primary {
+      background: #f0dfae;
+      color: var(--brown);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border-color: rgba(255, 255, 255, .75);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--forest-dark);
+    }
 
     /* Stats */
-    .stats-wrap { margin-top: -45px; position: relative; z-index: 3; }
-    .stats {
-      background: white; border-radius: var(--radius); box-shadow: var(--shadow);
-      display: grid; grid-template-columns: repeat(4, 1fr); overflow: hidden;
+    .stats-wrap {
+      margin-top: -45px;
+      position: relative;
+      z-index: 3;
     }
-    .stat { padding: 25px; text-align: center; border-right: 1px solid #e9eee9; }
-    .stat:last-child { border-right: 0; }
-    .stat i { color: var(--forest); font-size: 1.55rem; margin-bottom: 8px; }
-    .stat strong { display: block; color: var(--brown); font-size: 1.9rem; line-height: 1.1; }
-    .stat span { color: var(--muted); font-size: .9rem; }
+
+    .stats {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow: hidden;
+    }
+
+    .stat {
+      padding: 25px;
+      text-align: center;
+      border-right: 1px solid #e9eee9;
+    }
+
+    .stat:last-child {
+      border-right: 0;
+    }
+
+    .stat i {
+      color: var(--forest);
+      font-size: 1.55rem;
+      margin-bottom: 8px;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--brown);
+      font-size: 1.9rem;
+      line-height: 1.1;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: .9rem;
+    }
 
     /* Sections */
-    section { padding: 95px 0; }
-    .section-heading { max-width: 720px; margin-bottom: 42px; }
-    .section-kicker {
-      color: var(--forest); text-transform: uppercase; letter-spacing: 2px;
-      font-weight: 900; font-size: .78rem; margin-bottom: 8px;
+    section {
+      padding: 95px 0;
     }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 42px;
+    }
+
+    .section-kicker {
+      color: var(--forest);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 900;
+      font-size: .78rem;
+      margin-bottom: 8px;
+    }
+
     h2 {
       font-family: Georgia, "Times New Roman", serif;
       color: var(--brown);
@@ -147,78 +290,219 @@
       line-height: 1.12;
       margin-bottom: 14px;
     }
-    .section-heading p { color: var(--muted); }
+
+    .section-heading p {
+      color: var(--muted);
+    }
 
     .about-grid {
-      display: grid; grid-template-columns: 1.05fr .95fr; gap: 55px; align-items: center;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 55px;
+      align-items: center;
     }
+
     .about-image {
-      border-radius: 30px; overflow: hidden; box-shadow: var(--shadow);
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
       min-height: 450px;
     }
-    .about-image img { width: 100%; height: 100%; object-fit: cover; }
-    .about-copy p { color: var(--muted); margin-bottom: 17px; }
-    .check-list { list-style: none; margin: 25px 0; display: grid; gap: 13px; }
-    .check-list li { display: flex; gap: 11px; align-items: flex-start; }
-    .check-list i { color: var(--forest); margin-top: 5px; }
-    .location-box {
-      background: var(--forest-light); border-left: 5px solid var(--forest);
-      padding: 18px 20px; border-radius: 12px; margin-top: 25px;
-    }
-    .location-box strong { display: block; color: var(--brown); margin-bottom: 4px; }
-    .location-box span { color: var(--muted); }
 
-    .cream-section { background: #f0ead8; }
-    .cards {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 23px;
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
+
+    .about-copy p {
+      color: var(--muted);
+      margin-bottom: 17px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 25px 0;
+      display: grid;
+      gap: 13px;
+    }
+
+    .check-list li {
+      display: flex;
+      gap: 11px;
+      align-items: flex-start;
+    }
+
+    .check-list i {
+      color: var(--forest);
+      margin-top: 5px;
+    }
+
+    .location-box {
+      background: var(--forest-light);
+      border-left: 5px solid var(--forest);
+      padding: 18px 20px;
+      border-radius: 12px;
+      margin-top: 25px;
+    }
+
+    .location-box strong {
+      display: block;
+      color: var(--brown);
+      margin-bottom: 4px;
+    }
+
+    .location-box span {
+      color: var(--muted);
+    }
+
+    .cream-section {
+      background: #f0ead8;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 23px;
+    }
+
     .card {
-      background: white; border-radius: var(--radius); overflow: hidden;
+      background: white;
+      border-radius: var(--radius);
+      overflow: hidden;
       box-shadow: 0 8px 28px rgba(60, 45, 30, .08);
       transition: transform .2s ease, box-shadow .2s ease;
     }
-    .card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
-    .card-img { height: 230px; overflow: hidden; }
-    .card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
-    .card:hover .card-img img { transform: scale(1.04); }
-    .card-body { padding: 25px; }
-    .card-body i { color: var(--forest); font-size: 1.5rem; margin-bottom: 12px; }
-    .card-body h3 { color: var(--brown); font-size: 1.3rem; margin-bottom: 8px; }
-    .card-body p { color: var(--muted); font-size: .95rem; }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .card-img {
+      height: 230px;
+      overflow: hidden;
+    }
+
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .35s ease;
+    }
+
+    .card:hover .card-img img {
+      transform: scale(1.04);
+    }
+
+    .card-body {
+      padding: 25px;
+    }
+
+    .card-body i {
+      color: var(--forest);
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .card-body h3 {
+      color: var(--brown);
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .card-body p {
+      color: var(--muted);
+      font-size: .95rem;
+    }
 
     .quality {
-      display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
     }
+
     .quality-item {
-      padding: 26px; border-radius: 18px; background: white;
-      border: 1px solid rgba(31,107,58,.1);
+      padding: 26px;
+      border-radius: 18px;
+      background: white;
+      border: 1px solid rgba(31, 107, 58, .1);
     }
+
     .quality-item i {
-      width: 46px; height: 46px; display: grid; place-items: center;
-      background: var(--forest-light); border-radius: 50%; color: var(--forest);
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      background: var(--forest-light);
+      border-radius: 50%;
+      color: var(--forest);
       margin-bottom: 14px;
     }
-    .quality-item h3 { color: var(--brown); margin-bottom: 6px; }
-    .quality-item p { color: var(--muted); font-size: .93rem; }
+
+    .quality-item h3 {
+      color: var(--brown);
+      margin-bottom: 6px;
+    }
+
+    .quality-item p {
+      color: var(--muted);
+      font-size: .93rem;
+    }
 
     .contact {
       background:
-        linear-gradient(135deg, rgba(18,76,42,.97), rgba(31,107,58,.91)),
+        linear-gradient(135deg, rgba(18, 76, 42, .97), rgba(31, 107, 58, .91)),
         url("https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=1600&q=80") center/cover;
       color: white;
     }
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
-    .contact h2 { color: white; }
-    .contact p { color: rgba(255,255,255,.82); }
-    .contact-card {
-      background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18);
-      padding: 28px; border-radius: 22px;
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
     }
-    .contact-line { display: flex; gap: 14px; margin-bottom: 22px; }
-    .contact-line:last-child { margin-bottom: 0; }
-    .contact-line i { width: 25px; color: #f0dfae; margin-top: 4px; }
-    .contact-line strong { display: block; color: #f0dfae; }
-    .contact-line span { color: rgba(255,255,255,.87); }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact p {
+      color: rgba(255, 255, 255, .82);
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .18);
+      padding: 28px;
+      border-radius: 22px;
+    }
+
+    .contact-line {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .contact-line:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-line i {
+      width: 25px;
+      color: #f0dfae;
+      margin-top: 4px;
+    }
+
+    .contact-line strong {
+      display: block;
+      color: #f0dfae;
+    }
+
+    .contact-line span {
+      color: rgba(255, 255, 255, .87);
+    }
 
 
     /* Image Gallery */
@@ -227,6 +511,7 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
+
     .gallery-item {
       position: relative;
       height: 250px;
@@ -235,26 +520,33 @@
       background: var(--forest-light);
       box-shadow: 0 8px 24px rgba(60, 45, 30, .08);
     }
+
     .gallery-item.large {
       grid-column: span 2;
       grid-row: span 2;
       height: 516px;
     }
+
     .gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform .4s ease;
     }
+
     .gallery-item::after {
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(18,76,42,.72), transparent 55%);
+      background: linear-gradient(to top, rgba(18, 76, 42, .72), transparent 55%);
       opacity: .7;
       pointer-events: none;
     }
-    .gallery-item:hover img { transform: scale(1.07); }
+
+    .gallery-item:hover img {
+      transform: scale(1.07);
+    }
+
     .gallery-caption {
       position: absolute;
       z-index: 2;
@@ -267,418 +559,587 @@
     }
 
     /* Footer */
-    footer { background: #103b22; color: rgba(255,255,255,.78); padding: 50px 0 25px; }
-    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 45px; }
-    .footer-brand { display: flex; gap: 13px; align-items: center; margin-bottom: 18px; }
-    .footer-brand img { width: 65px; height: 65px; border-radius: 50%; }
-    .footer-brand strong { display: block; color: white; }
-    .footer-brand span { font-size: .75rem; color: #f0dfae; letter-spacing: 1px; }
-    footer h3 { color: #f0dfae; margin-bottom: 13px; }
-    footer p, footer li { font-size: .9rem; }
-    footer ul { list-style: none; display: grid; gap: 7px; }
-    footer a:hover { color: white; }
-    .socials { display: flex; gap: 10px; margin-top: 18px; }
-    .socials a {
-      width: 40px; height: 40px; display: grid; place-items: center;
-      border-radius: 50%; border: 1px solid rgba(255,255,255,.22);
-      color: white; transition: .2s ease;
+    footer {
+      background: #103b22;
+      color: rgba(255, 255, 255, .78);
+      padding: 50px 0 25px;
     }
-    .socials a:hover { background: #f0dfae; color: var(--brown); }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+    }
+
+    .footer-brand {
+      display: flex;
+      gap: 13px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .footer-brand img {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+    }
+
+    .footer-brand strong {
+      display: block;
+      color: white;
+    }
+
+    .footer-brand span {
+      font-size: .75rem;
+      color: #f0dfae;
+      letter-spacing: 1px;
+    }
+
+    footer h3 {
+      color: #f0dfae;
+      margin-bottom: 13px;
+    }
+
+    footer p,
+    footer li {
+      font-size: .9rem;
+    }
+
+    footer ul {
+      list-style: none;
+      display: grid;
+      gap: 7px;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .socials a {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, .22);
+      color: white;
+      transition: .2s ease;
+    }
+
+    .socials a:hover {
+      background: #f0dfae;
+      color: var(--brown);
+    }
+
     .copyright {
-      border-top: 1px solid rgba(255,255,255,.12);
-      margin-top: 35px; padding-top: 20px; text-align: center; font-size: .82rem;
+      border-top: 1px solid rgba(255, 255, 255, .12);
+      margin-top: 35px;
+      padding-top: 20px;
+      text-align: center;
+      font-size: .82rem;
     }
 
     @media (max-width: 900px) {
       nav ul {
-        position: absolute; top: 82px; left: 0; right: 0;
-        background: var(--cream); padding: 20px 6%;
-        display: none; flex-direction: column; align-items: flex-start;
-        box-shadow: 0 15px 25px rgba(0,0,0,.08);
+        position: absolute;
+        top: 82px;
+        left: 0;
+        right: 0;
+        background: var(--cream);
+        padding: 20px 6%;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .08);
       }
-      nav ul.open { display: flex; }
-      .menu-btn { display: block; }
-      .stats { grid-template-columns: repeat(2, 1fr); }
-      .stat:nth-child(2) { border-right: 0; }
-      .stat:nth-child(-n+2) { border-bottom: 1px solid #e9eee9; }
-      .about-grid, .contact-grid { grid-template-columns: 1fr; }
-      .cards { grid-template-columns: 1fr 1fr; }
-      .gallery { grid-template-columns: repeat(2, 1fr); }
-      .gallery-item.large { grid-column: span 2; grid-row: span 1; height: 320px; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
+
+      nav ul.open {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stat:nth-child(2) {
+        border-right: 0;
+      }
+
+      .stat:nth-child(-n+2) {
+        border-bottom: 1px solid #e9eee9;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-item.large {
+        grid-column: span 2;
+        grid-row: span 1;
+        height: 320px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
     }
 
     @media (max-width: 600px) {
-      .nav { min-height: 72px; }
-      .brand img { width: 52px; height: 52px; }
-      .brand-text strong { font-size: .84rem; }
-      .brand-text span { font-size: .63rem; }
-      nav ul { top: 72px; }
-      .hero { min-height: 610px; }
-      .hero-content { padding: 60px 0; }
-      section { padding: 70px 0; }
-      .stats-wrap { margin-top: -30px; }
-      .stats { grid-template-columns: 1fr 1fr; }
-      .stat { padding: 18px 10px; }
-      .stat strong { font-size: 1.45rem; }
-      .cards, .quality, .footer-grid { grid-template-columns: 1fr; }
-      .gallery { grid-template-columns: 1fr; }
-      .gallery-item, .gallery-item.large { grid-column: span 1; grid-row: span 1; height: 260px; }
-      .about-image { min-height: 320px; }
-      .contact-grid { gap: 28px; }
+      .nav {
+        min-height: 72px;
+      }
+
+      .brand img {
+        width: 52px;
+        height: 52px;
+      }
+
+      .brand-text strong {
+        font-size: .84rem;
+      }
+
+      .brand-text span {
+        font-size: .63rem;
+      }
+
+      nav ul {
+        top: 72px;
+      }
+
+      .hero {
+        min-height: 610px;
+      }
+
+      .hero-content {
+        padding: 60px 0;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .stats-wrap {
+        margin-top: -30px;
+      }
+
+      .stats {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .stat {
+        padding: 18px 10px;
+      }
+
+      .stat strong {
+        font-size: 1.45rem;
+      }
+
+      .cards,
+      .quality,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item,
+      .gallery-item.large {
+        grid-column: span 1;
+        grid-row: span 1;
+        height: 260px;
+      }
+
+      .about-image {
+        min-height: 320px;
+      }
+
+      .contact-grid {
+        gap: 28px;
+      }
     }
   </style>
 </head>
 
 <body>
-<header>
-  <div class="container nav">
-    <a class="brand" href="#home" aria-label="Aathreya Agro & Dairy Farm home">
-      <img src="assets/aathreya-logo.jpeg" alt="Aathreya Agro & Dairy Farm logo">
-      <div class="brand-text">
-        <strong>Aathreya Agro & Dairy Farm</strong>
-        <span>Your Daily Dose of Nature</span>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Aathreya Agro & Dairy Farm home">
+        <img src="assets/aathreya-logo.jpeg" alt="Aathreya Agro & Dairy Farm logo">
+        <div class="brand-text">
+          <strong>Aathreya Agro & Dairy Farm</strong>
+          <span>Your Daily Dose of Nature</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="navMenu">
+          <li><a href="#home" onclick="closeMenu()">Home</a></li>
+          <li><a href="#about" onclick="closeMenu()">About</a></li>
+          <li><a href="#farm" onclick="closeMenu()">Our Farm</a></li>
+          <li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
+          <li><a href="#quality" onclick="closeMenu()">Quality</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="eyebrow"><i class="fa-solid fa-leaf"></i> Farm Fresh • Naturally Nourishing</div>
+          <h1>From Our Farm<br><span>to Your Family</span></h1>
+          <p>
+            Welcome to Aathreya Agro & Dairy Farm — a family-focused dairy farm in
+            Anandapuram, Visakhapatnam, caring for 50+ cows and producing around
+            500 litres of milk every day.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#about"><i class="fa-solid fa-seedling"></i> Discover Our Farm</a>
+            <a class="btn btn-outline" href="#contact"><i class="fa-solid fa-location-dot"></i> Visit Us</a>
+          </div>
+        </div>
       </div>
-    </a>
+    </section>
 
-    <nav aria-label="Main navigation">
-      <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <ul id="navMenu">
-        <li><a href="#home" onclick="closeMenu()">Home</a></li>
-        <li><a href="#about" onclick="closeMenu()">About</a></li>
-        <li><a href="#farm" onclick="closeMenu()">Our Farm</a></li>
-        <li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
-        <li><a href="#quality" onclick="closeMenu()">Quality</a></li>
-        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="hero-content">
-        <div class="eyebrow"><i class="fa-solid fa-leaf"></i> Farm Fresh • Naturally Nourishing</div>
-        <h1>From Our Farm<br><span>to Your Family</span></h1>
-        <p>
-          Welcome to Aathreya Agro & Dairy Farm — a family-focused dairy farm in
-          Anandapuram, Visakhapatnam, caring for 50+ cows and producing around
-          500 litres of milk every day.
-        </p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#about"><i class="fa-solid fa-seedling"></i> Discover Our Farm</a>
-          <a class="btn btn-outline" href="#contact"><i class="fa-solid fa-location-dot"></i> Visit Us</a>
+    <div class="container stats-wrap">
+      <div class="stats">
+        <div class="stat">
+          <i class="fa-solid fa-cow"></i>
+          <strong>50+</strong>
+          <span>Cows on the Farm</span>
+        </div>
+        <div class="stat">
+          <i class="fa-solid fa-droplet"></i>
+          <strong>500 L</strong>
+          <span>Approx. Daily Milk</span>
+        </div>
+        <div class="stat">
+          <i class="fa-solid fa-wheat-awn"></i>
+          <strong>Farm</strong>
+          <span>Agro & Dairy Operations</span>
+        </div>
+        <div class="stat">
+          <i class="fa-solid fa-location-dot"></i>
+          <strong>Vizag</strong>
+          <span>Anandapuram, AP</span>
         </div>
       </div>
     </div>
-  </section>
 
-  <div class="container stats-wrap">
-    <div class="stats">
-      <div class="stat">
-        <i class="fa-solid fa-cow"></i>
-        <strong>50+</strong>
-        <span>Cows on the Farm</span>
-      </div>
-      <div class="stat">
-        <i class="fa-solid fa-droplet"></i>
-        <strong>500 L</strong>
-        <span>Approx. Daily Milk</span>
-      </div>
-      <div class="stat">
-        <i class="fa-solid fa-wheat-awn"></i>
-        <strong>Farm</strong>
-        <span>Agro & Dairy Operations</span>
-      </div>
-      <div class="stat">
-        <i class="fa-solid fa-location-dot"></i>
-        <strong>Vizag</strong>
-        <span>Anandapuram, AP</span>
-      </div>
-    </div>
-  </div>
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="assets/Cattle Farm.png"
+            alt="Cattle grazing on a green farm" loading="lazy">
+        </div>
+        <div class="about-copy">
+          <div class="section-heading">
+            <div class="section-kicker">About Aathreya</div>
+            <h2>Rooted in farming. Focused on dairy.</h2>
+            <p>
+              Aathreya Agro & Dairy Farm is the partnership firm operating from
+              Anandapuram, Visakhapatnam, Andhra Pradesh. Our farm is built around
+              responsible cattle care, daily dairy operations and a connection
+              with the land.
+            </p>
+          </div>
 
-  <section id="about">
-    <div class="container about-grid">
-      <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1523742810391-2d5f7e6f7c0f?auto=format&fit=crop&w=1200&q=85"
-             alt="Cattle grazing on a green farm" loading="lazy">
+          <ul class="check-list">
+            <li><i class="fa-solid fa-circle-check"></i><span>50+ cows maintained at the farm.</span></li>
+            <li><i class="fa-solid fa-circle-check"></i><span>Approximately 500 litres of milk production per
+                day.</span></li>
+            <li><i class="fa-solid fa-circle-check"></i><span>Agro and dairy activities under one farm identity.</span>
+            </li>
+            <li><i class="fa-solid fa-circle-check"></i><span>Located in the Anandapuram area of Visakhapatnam.</span>
+            </li>
+          </ul>
+
+          <div class="location-box">
+            <strong><i class="fa-solid fa-location-dot"></i> Principal Place of Business</strong>
+            <span>
+              Survey No. 147-16/17/18, Anandapuram,<br>
+              Visakhapatnam, Andhra Pradesh - 530052.
+            </span>
+          </div>
+        </div>
       </div>
-      <div class="about-copy">
+    </section>
+
+    <section class="cream-section" id="farm">
+      <div class="container">
         <div class="section-heading">
-          <div class="section-kicker">About Aathreya</div>
-          <h2>Rooted in farming. Focused on dairy.</h2>
+          <div class="section-kicker">Our Farm</div>
+          <h2>A closer look at farm life</h2>
           <p>
-            Aathreya Agro & Dairy Farm is the partnership firm operating from
-            Anandapuram, Visakhapatnam, Andhra Pradesh. Our farm is built around
-            responsible cattle care, daily dairy operations and a connection
-            with the land.
+            A visual introduction to the people, animals and agricultural setting
+            behind Aathreya Agro & Dairy Farm.
           </p>
         </div>
 
-        <ul class="check-list">
-          <li><i class="fa-solid fa-circle-check"></i><span>50+ cows maintained at the farm.</span></li>
-          <li><i class="fa-solid fa-circle-check"></i><span>Approximately 500 litres of milk production per day.</span></li>
-          <li><i class="fa-solid fa-circle-check"></i><span>Agro and dairy activities under one farm identity.</span></li>
-          <li><i class="fa-solid fa-circle-check"></i><span>Located in the Anandapuram area of Visakhapatnam.</span></li>
-        </ul>
+        <div class="cards">
+          <article class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?auto=format&fit=crop&w=1000&q=85"
+                alt="Cow in a dairy farm" loading="lazy">
+            </div>
+            <div class="card-body">
+              <i class="fa-solid fa-cow"></i>
+              <h3>Cattle Care</h3>
+              <p>Our dairy operation is centered around the daily care and management of our cattle.</p>
+            </div>
+          </article>
 
-        <div class="location-box">
-          <strong><i class="fa-solid fa-location-dot"></i> Principal Place of Business</strong>
-          <span>
-            Survey No. 147-16/17/18, Anandapuram,<br>
-            Visakhapatnam, Andhra Pradesh - 530052.
-          </span>
+          <article class="card">
+            <div class="card-img">
+              <img src="assets/Dairy Production.png"
+                alt="Fresh milk in dairy containers" loading="lazy">
+            </div>
+            <div class="card-body">
+              <i class="fa-solid fa-bottle-droplet"></i>
+              <h3>Dairy Production</h3>
+              <p>With around 500 litres of daily production, dairy is at the heart of our farm.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=1000&q=85"
+                alt="Green agricultural farm landscape" loading="lazy">
+            </div>
+            <div class="card-body">
+              <i class="fa-solid fa-tractor"></i>
+              <h3>Agro & Nature</h3>
+              <p>A farm environment where agriculture, livestock and the natural landscape come together.</p>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="cream-section" id="farm">
-    <div class="container">
-      <div class="section-heading">
-        <div class="section-kicker">Our Farm</div>
-        <h2>A closer look at farm life</h2>
-        <p>
-          A visual introduction to the people, animals and agricultural setting
-          behind Aathreya Agro & Dairy Farm.
-        </p>
-      </div>
 
-      <div class="cards">
-        <article class="card">
-          <div class="card-img">
-            <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?auto=format&fit=crop&w=1000&q=85"
-                 alt="Cow in a dairy farm" loading="lazy">
+    <section id="gallery" class="cream-section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Farm Moments</div>
+          <h2>Image Gallery</h2>
+          <p>
+            A glimpse of life at Aathreya Agro & Dairy Farm. Replace these sample
+            images with your own farm, cattle, dairy and team photographs.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <div class="gallery-item large">
+            <img src="assets/Cattle Farm.png" alt="Green dairy farm landscape" loading="lazy">
+            <div class="gallery-caption">Our Green Farm</div>
           </div>
-          <div class="card-body">
-            <i class="fa-solid fa-cow"></i>
+
+          <div class="gallery-item">
+            <img src="assets/IMG_0821.jpeg " alt="Dairy cow" loading="lazy">
+            <div class="gallery-caption">Our Cattle</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/IMG_0836.jpeg" alt="Fresh milk containers" loading="lazy">
+            <div class="gallery-caption">Fresh Dairy</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/IMG_0839.jpeg" alt="Agricultural field" loading="lazy">
+            <div class="gallery-caption">Agro & Nature</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/IMG_0827.jpeg" alt="Cow in a field" loading="lazy">
+            <div class="gallery-caption">Farm Life</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/IMG_0835.jpeg" alt="Livestock on a farm" loading="lazy">
+            <div class="gallery-caption">Daily Care</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/IMG_0846.jpeg" alt="Livestock on a farm" loading="lazy">
+            <div class="gallery-caption">Guinea fowl</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/IMG_0847.jpeg" alt="Livestock on a farm" loading="lazy">
+            <div class="gallery-caption">Cattle</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/IMG_0824.jpeg" alt="Livestock on a farm" loading="lazy">
+            <div class="gallery-caption">Grass</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quality">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Our Approach</div>
+          <h2>Built around care and consistency</h2>
+          <p>
+            The website can be expanded later with detailed information about
+            feeding practices, milking processes, farm facilities and product availability.
+          </p>
+        </div>
+
+        <div class="quality">
+          <div class="quality-item">
+            <i class="fa-solid fa-heart"></i>
             <h3>Cattle Care</h3>
-            <p>Our dairy operation is centered around the daily care and management of our cattle.</p>
+            <p>Daily attention to the health, comfort and routine of the farm's cattle.</p>
           </div>
-        </article>
-
-        <article class="card">
-          <div class="card-img">
-            <img src="https://images.unsplash.com/photo-1560452422-1f4f8f0f1d8a?auto=format&fit=crop&w=1000&q=85"
-                 alt="Fresh milk in dairy containers" loading="lazy">
+          <div class="quality-item">
+            <i class="fa-solid fa-vial-circle-check"></i>
+            <h3>Dairy Focus</h3>
+            <p>A dedicated dairy operation with approximately 500 litres of milk produced each day.</p>
           </div>
-          <div class="card-body">
-            <i class="fa-solid fa-bottle-droplet"></i>
-            <h3>Dairy Production</h3>
-            <p>With around 500 litres of daily production, dairy is at the heart of our farm.</p>
+          <div class="quality-item">
+            <i class="fa-solid fa-leaf"></i>
+            <h3>Agro Connection</h3>
+            <p>An integrated farm identity connecting livestock, agriculture and the surrounding environment.</p>
           </div>
-        </article>
-
-        <article class="card">
-          <div class="card-img">
-            <img src="https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=1000&q=85"
-                 alt="Green agricultural farm landscape" loading="lazy">
+          <div class="quality-item">
+            <i class="fa-solid fa-people-group"></i>
+            <h3>Community</h3>
+            <p>A local farm presence serving the Anandapuram and Visakhapatnam region.</p>
           </div>
-          <div class="card-body">
-            <i class="fa-solid fa-tractor"></i>
-            <h3>Agro & Nature</h3>
-            <p>A farm environment where agriculture, livestock and the natural landscape come together.</p>
-          </div>
-        </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-kicker" style="color:#f0dfae;">Get in Touch</div>
+          <h2>Visit Aathreya Agro & Dairy Farm</h2>
+          <p>
+            For future use, this section can include your phone number, WhatsApp,
+            email, business hours and links to Google Maps.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="mailto:info@aathreyadairy.example">
+              <i class="fa-solid fa-envelope"></i> Email Us
+            </a>
+          </div>
+        </div>
 
-  <section id="gallery" class="cream-section">
+        <div class="contact-card">
+          <div class="contact-line">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Principal Place of Business</strong>
+              <span>Survey No. 147-16/17/18, Anandapuram,<br>Visakhapatnam, Andhra Pradesh - 530052.</span>
+            </div>
+          </div>
+          <div class="contact-line">
+            <i class="fa-solid fa-cow"></i>
+            <div>
+              <strong>Farm Capacity</strong>
+              <span>50+ cows • Around 500 litres/day</span>
+            </div>
+          </div>
+          <div class="contact-line">
+            <i class="fa-solid fa-building"></i>
+            <div>
+              <strong>Firm Name</strong>
+              <span>AATHREYA AGRO & DAIRY FARM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
     <div class="container">
-      <div class="section-heading">
-        <div class="section-kicker">Farm Moments</div>
-        <h2>Image Gallery</h2>
-        <p>
-          A glimpse of life at Aathreya Agro & Dairy Farm. Replace these sample
-          images with your own farm, cattle, dairy and team photographs.
-        </p>
-      </div>
-
-      <div class="gallery">
-        <div class="gallery-item large">
-          <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1200&q=85"
-               alt="Green dairy farm landscape" loading="lazy">
-          <div class="gallery-caption">Our Green Farm</div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?auto=format&fit=crop&w=900&q=85"
-               alt="Dairy cow" loading="lazy">
-          <div class="gallery-caption">Our Cattle</div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1560452422-1f4f8f0f1d8a?auto=format&fit=crop&w=900&q=85"
-               alt="Fresh milk containers" loading="lazy">
-          <div class="gallery-caption">Fresh Dairy</div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=900&q=85"
-               alt="Agricultural field" loading="lazy">
-          <div class="gallery-caption">Agro & Nature</div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=900&q=85"
-               alt="Cow in a field" loading="lazy">
-          <div class="gallery-caption">Farm Life</div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1523742810391-2d5f7e6f7c0f?auto=format&fit=crop&w=900&q=85"
-               alt="Livestock on a farm" loading="lazy">
-          <div class="gallery-caption">Daily Care</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="quality">
-    <div class="container">
-      <div class="section-heading">
-        <div class="section-kicker">Our Approach</div>
-        <h2>Built around care and consistency</h2>
-        <p>
-          The website can be expanded later with detailed information about
-          feeding practices, milking processes, farm facilities and product availability.
-        </p>
-      </div>
-
-      <div class="quality">
-        <div class="quality-item">
-          <i class="fa-solid fa-heart"></i>
-          <h3>Cattle Care</h3>
-          <p>Daily attention to the health, comfort and routine of the farm's cattle.</p>
-        </div>
-        <div class="quality-item">
-          <i class="fa-solid fa-vial-circle-check"></i>
-          <h3>Dairy Focus</h3>
-          <p>A dedicated dairy operation with approximately 500 litres of milk produced each day.</p>
-        </div>
-        <div class="quality-item">
-          <i class="fa-solid fa-leaf"></i>
-          <h3>Agro Connection</h3>
-          <p>An integrated farm identity connecting livestock, agriculture and the surrounding environment.</p>
-        </div>
-        <div class="quality-item">
-          <i class="fa-solid fa-people-group"></i>
-          <h3>Community</h3>
-          <p>A local farm presence serving the Anandapuram and Visakhapatnam region.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="container contact-grid">
-      <div>
-        <div class="section-kicker" style="color:#f0dfae;">Get in Touch</div>
-        <h2>Visit Aathreya Agro & Dairy Farm</h2>
-        <p>
-          For future use, this section can include your phone number, WhatsApp,
-          email, business hours and links to Google Maps.
-        </p>
-        <div class="actions">
-          <a class="btn btn-primary" href="mailto:info@aathreyadairy.example">
-            <i class="fa-solid fa-envelope"></i> Email Us
-          </a>
-        </div>
-      </div>
-
-      <div class="contact-card">
-        <div class="contact-line">
-          <i class="fa-solid fa-location-dot"></i>
-          <div>
-            <strong>Principal Place of Business</strong>
-            <span>Survey No. 147-16/17/18, Anandapuram,<br>Visakhapatnam, Andhra Pradesh - 530052.</span>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/aathreya-logo.jpeg" alt="Aathreya Agro & Dairy Farm logo">
+            <div>
+              <strong>Aathreya Agro & Dairy Farm</strong>
+              <span>Your Daily Dose of Nature</span>
+            </div>
+          </div>
+          <p>
+            A dairy and agro farm based in Anandapuram, Visakhapatnam,
+            Andhra Pradesh.
+          </p>
+          <div class="socials" aria-label="Social media links">
+            <!-- Replace # with your real social media URLs -->
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
-        <div class="contact-line">
-          <i class="fa-solid fa-cow"></i>
-          <div>
-            <strong>Farm Capacity</strong>
-            <span>50+ cows • Around 500 litres/day</span>
-          </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#farm">Our Farm</a></li>
+            <li><a href="#quality">Our Approach</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="contact-line">
-          <i class="fa-solid fa-building"></i>
-          <div>
-            <strong>Firm Name</strong>
-            <span>AATHREYA AGRO & DAIRY FARM</span>
-          </div>
+
+        <div>
+          <h3>Business Address</h3>
+          <p>
+            Survey No. 147-16/17/18,<br>
+            Anandapuram,<br>
+            Visakhapatnam,<br>
+            Andhra Pradesh - 530052.
+          </p>
         </div>
+      </div>
+
+      <div class="copyright">
+        © <span id="year"></span> Aathreya Agro & Dairy Farm. All rights reserved.
       </div>
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">
-          <img src="assets/aathreya-logo.jpeg" alt="Aathreya Agro & Dairy Farm logo">
-          <div>
-            <strong>Aathreya Agro & Dairy Farm</strong>
-            <span>Your Daily Dose of Nature</span>
-          </div>
-        </div>
-        <p>
-          A dairy and agro farm based in Anandapuram, Visakhapatnam,
-          Andhra Pradesh.
-        </p>
-        <div class="socials" aria-label="Social media links">
-          <!-- Replace # with your real social media URLs -->
-          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-      </div>
-
-      <div>
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#farm">Our Farm</a></li>
-          <li><a href="#quality">Our Approach</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Business Address</h3>
-        <p>
-          Survey No. 147-16/17/18,<br>
-          Anandapuram,<br>
-          Visakhapatnam,<br>
-          Andhra Pradesh - 530052.
-        </p>
-      </div>
-    </div>
-
-    <div class="copyright">
-      © <span id="year"></span> Aathreya Agro & Dairy Farm. All rights reserved.
-    </div>
-  </div>
-</footer>
-
-<script>
-  function toggleMenu() {
-    document.getElementById('navMenu').classList.toggle('open');
-  }
-  function closeMenu() {
-    document.getElementById('navMenu').classList.remove('open');
-  }
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('open');
+    }
+    function closeMenu() {
+      document.getElementById('navMenu').classList.remove('open');
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
+
 </html>
